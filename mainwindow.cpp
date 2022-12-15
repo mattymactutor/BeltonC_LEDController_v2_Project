@@ -1372,6 +1372,7 @@ void MainWindow::loadConfigFromFile(){
         newConf.numLEDs = 10;//just show something, if it's 0 it seems like it's not working
         newConf.MB = 255;
         newConf.stripType = 0;
+        newConf.lastOpenProject = "";
         config = newConf;
         saveConfigToFile();
     }
