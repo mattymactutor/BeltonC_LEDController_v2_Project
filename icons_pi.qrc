@@ -1,8 +1,8 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource>
-    <file>/home/pi/BeltonC_LEDController_v2_Project/icons/copy.png</file>
-    <file>/home/pi/BeltonC_LEDController_v2_Project/icons/save.png</file>
-    <file>/home/pi/BeltonC_LEDController_v2_Project/icons/new.png</file>
-    <file>/home/pi/BeltonC_LEDController_v2_Project/icons/open.png</file>
+    <file>/home/matty/BeltonC_LEDController_v2_Project/icons/copy.png</file>
+    <file>/home/matty/BeltonC_LEDController_v2_Project/icons/save.png</file>
+    <file>/home/matty/BeltonC_LEDController_v2_Project/icons/new.png</file>
+    <file>/home/matty/BeltonC_LEDController_v2_Project/icons/open.png</file>
 </qresource>
 </RCC>
