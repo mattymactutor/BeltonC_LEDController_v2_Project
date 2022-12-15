@@ -1,0 +1,17 @@
+Update Code: 
+
+Open the terminal
+
+sudo rm -r BeltonC_LEDController_v2_Project
+git clone https://github.com/mattymactutor/BeltonC_LEDController_v2_Project.git
+
+First update arduino code:
+Click folder icon, go into BeltonC_LEDController_v2_Project, go into LEDController_v3_multipleStrips
+double click that arduino file and upload it.(it may not have the icon but the file extension is ".ino")
+
+Go back to terminal
+
+cd BeltonC_LEDController_v2_Project
+qmake -o Makefile BeltonC_LEDController_v2_Project.pro
+make
+./BeltonC_LEDController_v2_Project
