@@ -1375,6 +1375,12 @@ void MainWindow::loadConfigFromFile(){
         newConf.lastOpenProject = "";
         config = newConf;
         saveConfigToFile();
+        //also need to refresh the table because the combo groups are not drawn
+        refreshProjectTable();
+        //also load all sliders
+        config.tab = TAB_HSV; loadSliders();
+        config.tab = TAB_GRADIENT; loadSliders();
+        config.tab = TAB_HOME;
     }
 
     //first line is rgb
@@ -2323,7 +2329,6 @@ void MainWindow::on_btnLoadProject_clicked()
 
 }
 
-
 void MainWindow::on_btnCopyTo_clicked()
 {
     int idxSelect = checkTableSelection("Please click on a Group or Layer to copy it");
@@ -2348,7 +2353,6 @@ void MainWindow::on_btnCopyTo_clicked()
     }
 
 }
-
 
 void MainWindow::on_btnPaste_clicked()
 {
