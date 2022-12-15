@@ -21,7 +21,7 @@ HEADERS += \
 FORMS += \
     mainwindow.ui
 #one version for the pi when belton downloads and one version for me
-RESOURCES = icons_pi.qrc + icons.qrc
+RESOURCES = icons_pi.qrc
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
