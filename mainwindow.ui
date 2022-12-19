@@ -64,7 +64,7 @@
       </size>
      </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>3</number>
      </property>
      <property name="iconSize">
       <size>
@@ -1961,7 +1961,7 @@ QSlider::handle:vertical {
         <string>New Project</string>
        </property>
        <property name="text">
-        <string>NEW</string>
+        <string>New</string>
        </property>
       </widget>
       <widget class="QPushButton" name="btnLoadProject">
@@ -1977,10 +1977,10 @@ QSlider::handle:vertical {
         <string>Open Project</string>
        </property>
        <property name="text">
-        <string/>
+        <string>Open</string>
        </property>
        <property name="icon">
-        <iconset resource="icons_pi.qrc">
+        <iconset>
          <normaloff>:/icons/open.png</normaloff>:/icons/open.png</iconset>
        </property>
       </widget>
@@ -2052,6 +2052,9 @@ QSlider::handle:vertical {
          <height>31</height>
         </rect>
        </property>
+       <property name="placeholderText">
+        <string>Project Name</string>
+       </property>
       </widget>
       <widget class="QPushButton" name="btnSaveProject">
        <property name="geometry">
@@ -2066,10 +2069,10 @@ QSlider::handle:vertical {
         <string>Save Project</string>
        </property>
        <property name="text">
-        <string/>
+        <string>Save</string>
        </property>
        <property name="icon">
-        <iconset resource="icons_pi.qrc">
+        <iconset>
          <normaloff>:/icons/save.png</normaloff>:/icons/save.png</iconset>
        </property>
       </widget>
@@ -2086,10 +2089,10 @@ QSlider::handle:vertical {
         <string>Copy Project</string>
        </property>
        <property name="text">
-        <string/>
+        <string>Copy</string>
        </property>
        <property name="icon">
-        <iconset resource="icons_pi.qrc">
+        <iconset>
          <normaloff>:/icons/copy.png</normaloff>:/icons/copy.png</iconset>
        </property>
       </widget>
@@ -2148,8 +2151,6 @@ QSlider::handle:vertical {
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources>
-  <include location="icons_pi.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

@@ -15,6 +15,7 @@ using namespace std;
 /*
  * TODO FUTURE
  * TODO - the table selection disappears when you click stuff and it should come back
+ * When you hit cancel on the open button it says could not load
  * BUG - on the initial load the percent symbol doesn't show over the sliders
  * TODO - you should be able to paste over an existing layer to overwrite it?
 
@@ -575,6 +576,9 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->sldMasterGradient, &QSlider::valueChanged, this, &MainWindow::on_sldMasterBrightness);
     if (config.lastOpenProject.length() > 0){
         loadProjectFromFile(config.lastOpenProject, true);
+    } else {
+        //refresh the table to load the group combo drop downs
+        refreshProjectTable();
     }
     usleep(ARDUINO_MSG_DEL);
     sendStartUpData(true); //send true for first load
@@ -1376,12 +1380,13 @@ void MainWindow::loadConfigFromFile(){
         newConf.lastOpenProject = "";
         config = newConf;
         saveConfigToFile();
-        //also need to refresh the table because the combo groups are not drawn
-        refreshProjectTable();
+
         //also load all sliders
         config.tab = TAB_HSV; loadSliders();
         config.tab = TAB_GRADIENT; loadSliders();
-        config.tab = TAB_HOME;
+        config.tab = TAB_RGB; loadSliders();
+        //also need to refresh the table because the combo groups are not drawn
+        refreshProjectTable();
     }
 
     //first line is rgb
@@ -2308,6 +2313,10 @@ int MainWindow::checkTableSelection(QString errorMsg){
 
 void MainWindow::on_btnSaveProject_clicked()
 {
+    if (ui->edtProjectName->toPlainText().length() == 0){
+        displayStandardMessageBox("Please give this project a name before saving.");
+        return;
+    }
     saveProjectToFile();
 }
 
@@ -2325,8 +2334,10 @@ void MainWindow::on_btnLoadProject_clicked()
 {
     QString filename = QFileDialog::getOpenFileName(this,"Choose A Project",PROJECT_PATH);
     cout << filename.toStdString() << endl;
+    if ( filename.length() > 0){
     loadProjectFromFile(filename.toStdString());
     sendAllLayerInfo();
+    }
 
 }
 
