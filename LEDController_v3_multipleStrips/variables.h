@@ -18,7 +18,7 @@
 
 //-----LEDS-----
 // for most LED strips, and you can google the specific model number to check, each LED will pull 60ma when full brightness and white (all colors)
-#define MAX_LEDS 250
+#define MAX_LEDS 500
 int NUM_LEDS = 30;
 // each LED keeps track of what group it belonds to, if it belongs to the MASTER group use this number
 #define MASTER -1

@@ -15,6 +15,7 @@ using namespace std;
 /*
  * TODO FUTURE
  * TODO - the table selection disappears when you click stuff and it should come back
+ * BUG - on the initial load the percent symbol doesn't show over the sliders
  * TODO - you should be able to paste over an existing layer to overwrite it?
 
  Right now all Layers save all the data to file even if unneccessary
@@ -71,10 +72,10 @@ ENC_MODE encMode = SCROLL_HIGHLIGHT;
 #define MODE_GRADIENT 2
 
 #define NUM_TABS 4
-#define TAB_HOME 0
-#define TAB_RGB 1
-#define TAB_HSV 2
-#define TAB_GRADIENT 3
+#define TAB_RGB 0
+#define TAB_HSV 1
+#define TAB_GRADIENT 2
+#define TAB_HOME 3
 
 #define ARDUINO_MSG_DEL 75*1000
 
@@ -1626,8 +1627,8 @@ void MainWindow::sendLayerInfo(Layer * l){
         appendNum(msg,l->g);
         appendNum(msg,l->b);
         appendNum(msg,l->d);
-        appendNum(msg,l->w);
         appendNum(msg,l->t);
+        appendNum(msg,l->w);
         appendNum(msg,l->B);
     } else if (l->type == MODE_HSV){
         appendNum(msg,l->sh);

@@ -64,7 +64,7 @@
       </size>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <property name="iconSize">
       <size>
@@ -72,266 +72,6 @@
        <height>50</height>
       </size>
      </property>
-     <widget class="QWidget" name="tabHome">
-      <attribute name="title">
-       <string>Home</string>
-      </attribute>
-      <widget class="QTableWidget" name="tblGroups">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>80</y>
-         <width>771</width>
-         <height>331</height>
-        </rect>
-       </property>
-       <property name="columnCount">
-        <number>7</number>
-       </property>
-       <attribute name="verticalHeaderVisible">
-        <bool>false</bool>
-       </attribute>
-       <column/>
-       <column/>
-       <column/>
-       <column/>
-       <column/>
-       <column/>
-       <column/>
-      </widget>
-      <widget class="QPushButton" name="btnAddGroup">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>10</y>
-         <width>71</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>+ Group</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btnDeleteGroup">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>40</y>
-         <width>71</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>- Group</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblStripType">
-       <property name="geometry">
-        <rect>
-         <x>540</x>
-         <y>50</y>
-         <width>101</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>13</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Strip Type:</string>
-       </property>
-      </widget>
-      <widget class="QComboBox" name="cmbStripType">
-       <property name="geometry">
-        <rect>
-         <x>640</x>
-         <y>50</y>
-         <width>141</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QComboBox QAbstractItemView {
-
-    selection-background-color: rgb(0,0,127);
-    selection-color: rgb(0, 0, 0);
-}</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btnNewProject">
-       <property name="geometry">
-        <rect>
-         <x>480</x>
-         <y>10</y>
-         <width>45</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="toolTip">
-        <string>New Project</string>
-       </property>
-       <property name="text">
-        <string>NEW</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btnLoadProject">
-       <property name="geometry">
-        <rect>
-         <x>300</x>
-         <y>10</y>
-         <width>45</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="toolTip">
-        <string>Open Project</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="icons.qrc">
-         <normaloff>:/home/matty/Qt/Projects/BeltonC_LEDController_v2_Project/icons/open.png</normaloff>:/home/matty/Qt/Projects/BeltonC_LEDController_v2_Project/icons/open.png</iconset>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btnAddLayer">
-       <property name="geometry">
-        <rect>
-         <x>95</x>
-         <y>10</y>
-         <width>71</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>+ Layer</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btnDeleteLayer">
-       <property name="geometry">
-        <rect>
-         <x>95</x>
-         <y>40</y>
-         <width>71</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>- Layer</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblNumLeds">
-       <property name="geometry">
-        <rect>
-         <x>620</x>
-         <y>15</y>
-         <width>81</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>13</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Num LEDs:</string>
-       </property>
-      </widget>
-      <widget class="QPlainTextEdit" name="edtNumLeds">
-       <property name="geometry">
-        <rect>
-         <x>709</x>
-         <y>10</y>
-         <width>71</width>
-         <height>30</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-      </widget>
-      <widget class="QPlainTextEdit" name="edtProjectName">
-       <property name="geometry">
-        <rect>
-         <x>300</x>
-         <y>40</y>
-         <width>231</width>
-         <height>31</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btnSaveProject">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>10</y>
-         <width>45</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="toolTip">
-        <string>Save Project</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="icons.qrc">
-         <normaloff>:/home/matty/Qt/Projects/BeltonC_LEDController_v2_Project/icons/save.png</normaloff>:/home/matty/Qt/Projects/BeltonC_LEDController_v2_Project/icons/save.png</iconset>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btnCopyProject">
-       <property name="geometry">
-        <rect>
-         <x>420</x>
-         <y>10</y>
-         <width>45</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="toolTip">
-        <string>Copy Project</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="icons.qrc">
-         <normaloff>:/home/matty/Qt/Projects/BeltonC_LEDController_v2_Project/icons/copy.png</normaloff>:/home/matty/Qt/Projects/BeltonC_LEDController_v2_Project/icons/copy.png</iconset>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btnCopyTo">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>10</y>
-         <width>89</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Copy</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="btnPaste">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>40</y>
-         <width>89</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Paste</string>
-       </property>
-      </widget>
-     </widget>
      <widget class="QWidget" name="tabRGB">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -2120,6 +1860,266 @@ QSlider::handle:vertical {
       <zorder>lblEndValPercent</zorder>
       <zorder>lblMasterGradientPercent</zorder>
      </widget>
+     <widget class="QWidget" name="tabHome">
+      <attribute name="title">
+       <string>Home</string>
+      </attribute>
+      <widget class="QTableWidget" name="tblGroups">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>771</width>
+         <height>331</height>
+        </rect>
+       </property>
+       <property name="columnCount">
+        <number>7</number>
+       </property>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+      </widget>
+      <widget class="QPushButton" name="btnAddGroup">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>71</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>+ Group</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnDeleteGroup">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>71</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>- Group</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblStripType">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>50</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Strip Type:</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cmbStripType">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>50</y>
+         <width>141</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox QAbstractItemView {
+
+    selection-background-color: rgb(0,0,127);
+    selection-color: rgb(0, 0, 0);
+}</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnNewProject">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>10</y>
+         <width>45</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>New Project</string>
+       </property>
+       <property name="text">
+        <string>NEW</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnLoadProject">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>10</y>
+         <width>45</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Open Project</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icons_pi.qrc">
+         <normaloff>:/icons/open.png</normaloff>:/icons/open.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnAddLayer">
+       <property name="geometry">
+        <rect>
+         <x>95</x>
+         <y>10</y>
+         <width>71</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>+ Layer</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnDeleteLayer">
+       <property name="geometry">
+        <rect>
+         <x>95</x>
+         <y>40</y>
+         <width>71</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>- Layer</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblNumLeds">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>15</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Num LEDs:</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="edtNumLeds">
+       <property name="geometry">
+        <rect>
+         <x>709</x>
+         <y>10</y>
+         <width>71</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="edtProjectName">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>40</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnSaveProject">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>10</y>
+         <width>45</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Save Project</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icons_pi.qrc">
+         <normaloff>:/icons/save.png</normaloff>:/icons/save.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnCopyProject">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>10</y>
+         <width>45</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Copy Project</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icons_pi.qrc">
+         <normaloff>:/icons/copy.png</normaloff>:/icons/copy.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnCopyTo">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>10</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Copy</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnPaste">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>40</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Paste</string>
+       </property>
+      </widget>
+     </widget>
     </widget>
    </widget>
    <widget class="QPushButton" name="btnClose">
@@ -2149,7 +2149,7 @@ QSlider::handle:vertical {
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="icons.qrc"/>
+  <include location="icons_pi.qrc"/>
  </resources>
  <connections/>
 </ui>
